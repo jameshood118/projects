@@ -1,10 +1,6 @@
 <template>
   <div id="app">
-    <div class="columns">
-      <div class="column">
-        <Navigation />
-      </div>
-    </div>
+    <Navigation />
     <div class="container is-fluid">
       <router-view />
     </div>
