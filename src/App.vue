@@ -8,15 +8,15 @@
 </template>
 
 <script>
-import Navigation from './components/navigation.vue'
+import Navigation from "./components/navigation.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
     Navigation
   }
-}
+};
 </script>
 
 <style lang="scss">
-@import './styles/main.scss';
+@import "./styles/main.scss";
 </style>

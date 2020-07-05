@@ -1,5 +1,9 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav
+    class="navbar is-primary has-text-white"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="navbar-brand">
       <a role="button" class="navbar-burger">
         <span aria-hidden="true"></span>
@@ -25,6 +29,6 @@
 
 <script>
 export default {
-  name: 'Navbar'
-}
+  name: "Navbar"
+};
 </script>
