@@ -23,7 +23,19 @@ Vue.component('loading-state', LoadingState)
 import EmptyState from '@/components/empty-state'
 Vue.component('empty-state', EmptyState)
 
+import Breadcrumb from '@/components/breadcrumb'
+Vue.component('breadcrumb', Breadcrumb)
+
 Vue.config.productionTip = false
+
+Vue.filter('truncate', (body, length) => {
+  let ending = '...'
+  if (body && body.length > length) {
+    return body.substring(0, length - ending.length) + ending
+  } else {
+    return body
+  }
+})
 
 new Vue({
   router,
