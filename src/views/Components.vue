@@ -1,5 +1,6 @@
 <template>
   <div>
+    <breadcrumb />
     <section class="section">
       <div class="columns is-multiline">
         <div class="column is-full">
@@ -68,10 +69,18 @@
                       <div class="content">
                         <p>Emmpty State Default with no data</p>
                         <button
+                          v-if="emptyStateLoading == true"
                           class="button is-primary mb-3"
                           @click="simulateLoadingDone"
                         >
                           Simulate Loading Done
+                        </button>
+                        <button
+                          v-else
+                          class="button is-primary mb-3"
+                          @click="simulateLoadingStart"
+                        >
+                          Simulate Loading Start
                         </button>
                         <empty-state
                           :data="emptyStateData"
@@ -83,6 +92,29 @@
                   </article>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-full">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Breadcrumb (Bulma and fontawesome)
+              </p>
+            </header>
+            <div class="card-content">
+              <p>
+                I created a breadcrumb component that would use values off
+                vue-router to show information (and fontawesome icons, with a
+                back button using router history). The idea being uniformity and
+                clarity, additionally this method lets you focus on the values
+                from the router. This component is currently used on this site.
+                This can take in a :currentPage property as well, in case you
+                want to use your breadcrumbs as a unifom path and have the
+                finally page they land on be the current page (perhaps you have
+                a complex tree structure on your site
+              </p>
+              <breadcrumb :currentPage="'show off components flexibility'" />
             </div>
           </div>
         </div>
@@ -122,6 +154,9 @@ export default {
   methods: {
     simulateLoadingDone() {
       this.emptyStateLoading = false
+    },
+    simulateLoadingStart() {
+      this.emptyStateLoading = true
     },
     handleModalClick(msg, tagClass) {
       this.modalOpen = true
