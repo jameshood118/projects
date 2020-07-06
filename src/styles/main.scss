@@ -20,41 +20,7 @@
     &.is-xxlarge {height:6rem;width:6rem}
     svg { width: inherit; height: inherit; }
   }
-  
+
   .is-family-roboto {
     font-family: $roboto
-  }
-
-  .navbar {
-    box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
-  }
-
-  @media screen and (max-width: $desktop - 1px) {
-    .navbar.is-fixed-top .navbar-menu,
-    .navbar.is-fixed-top-touch .navbar-menu,
-    .navbar .navbar-menu {
-      overflow: initial;
-      padding: 0;
-      box-shadow: initial;
-      overflow-y: auto;
-      background-color: white;
-    }
-    .navbar-item {
-      &.has-dropdown {
-        & .navbar-link::after {
-          display:block
-        }
-        .navbar-dropdown {
-          display: none;
-        }
-        &.is-active {
-          .navbar-dropdown {
-            display: block;
-          }
-        }
-      }
-    }
-    .navbar-burger {
-      height: initial;
-    }
   }

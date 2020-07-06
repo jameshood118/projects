@@ -22,7 +22,6 @@ import LoadingState from '@/components/loading-state'
 Vue.component('loading-state', LoadingState)
 import EmptyState from '@/components/empty-state'
 Vue.component('empty-state', EmptyState)
-
 import Breadcrumb from '@/components/breadcrumb'
 Vue.component('breadcrumb', Breadcrumb)
 

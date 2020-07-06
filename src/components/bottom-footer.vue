@@ -1,6 +1,6 @@
 <template>
   <footer class="footer">
-    <div class="content has-text-centered">
+    <div class="content has-text-centered is-family-roboto">
       <p>
         2020 <a href="mailto:jameshood118@gmail.com">James Hood</a>,
         <a
