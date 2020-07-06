@@ -33,14 +33,14 @@
 
 <script>
 export default {
-  name: "Navbar",
+  name: 'Navbar',
   data() {
-    return { mobileMenu: false };
+    return { mobileMenu: false }
   },
   methods: {
     toggleMobileMenu() {
-      this.mobileMenu = !this.mobileMenu;
+      this.mobileMenu = !this.mobileMenu
     }
   }
-};
+}
 </script>
