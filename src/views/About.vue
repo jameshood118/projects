@@ -1,8 +1,8 @@
 <template>
   <div>
     <breadcrumb />
-    <div class="columns">
-      <div class="column">
+    <div class="columns is-multiline is-mobile">
+      <div class="column is-12">
         <div class="card">
           <div class="card-content">
             <p class="title is-6">About</p>
@@ -30,9 +30,7 @@
           </div>
         </div>
       </div>
-    </div>
-    <div class="columns is-multiline is-mobile">
-      <div class="column is-2">
+      <div class="column is-4">
         <div class="card">
           <div class="card-content">
             <p class="title is-6">Favorite things</p>
@@ -44,7 +42,7 @@
           </div>
         </div>
       </div>
-      <div class="column is-2">
+      <div class="column is-4">
         <div class="card">
           <div class="card-content">
             <p class="title is-6">Favorite games</p>
@@ -56,19 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="column is-2">
-        <div class="card">
-          <div class="card-content">
-            <p class="title is-6">Favorite TV Shows</p>
-          </div>
-          <div class="card-content">
-            <ul v-for="list in tvList" :key="list.item">
-              <li>{{ list.item }}</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="column is-2">
+      <div class="column is-4">
         <div class="card">
           <div class="card-content">
             <p class="title is-6">Favorite Comic Book Characters</p>
@@ -80,7 +66,19 @@
           </div>
         </div>
       </div>
-      <div class="column is-2">
+      <div class="column is-4">
+        <div class="card">
+          <div class="card-content">
+            <p class="title is-6">Favorite TV Shows</p>
+          </div>
+          <div class="card-content">
+            <ul v-for="list in tvList" :key="list.item">
+              <li>{{ list.item }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="column is-4">
         <div class="card">
           <div class="card-content">
             <p class="title is-6">Various Writings</p>
@@ -113,15 +111,16 @@ export default {
         { item: 'Card games with friends' }
       ],
       gamesList: [
-        { item: 'World of Warcraft' },
-        { item: 'Diablo 3' },
-        { item: 'WildStar' },
-        { item: 'Star Wars: The Old Republic' },
-        { item: 'Infamous: Second Son' },
+        { item: 'Animal Crossing: New Horizon' },
+        { item: 'Dauntless' },
+        { item: 'Ticket to Ride (boardgamee)' },
+        { item: 'Munchkin' },
+        { item: 'Settlers of Catan (boardgamee)' },
         { item: '101 Ways to Die (PS4)' }
       ],
       tvList: [
         { item: 'Archer' },
+        { item: 'Rick & Morty' },
         { item: 'The IT Crowd' },
         { item: 'Big Bang Theory' },
         { item: 'Heroes' },
@@ -130,11 +129,7 @@ export default {
         { item: 'Good Eats' },
         { item: 'Modern Marvels' },
         { item: 'How its Made' },
-        { item: 'How I Met Your Mother' },
-        { item: 'Game of Thrones' },
         { item: 'Lost' },
-        { item: 'The Walking Dead' },
-        { item: 'Once Upon a Time' },
         { item: 'Iron Chef (both Original and American)' },
         { item: 'House, MD' },
         { item: 'Scrubs' }
