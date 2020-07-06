@@ -150,6 +150,35 @@
             </div>
           </div>
         </div>
+        <div class="column is-full">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">Accordion (fontawesome)</p>
+            </header>
+            <div class="card-content">
+              <p>
+                I've created some accordions, because of course i did lol.
+              </p>
+              <section class="hero">
+                <div class="hero-body">
+                  <div class="container">
+                    <div class="columns">
+                      <div class="column is-full">
+                        <p class="title is-2 has-text-black">
+                          Frequently Asked Questions
+                        </p>
+                        <accordion v-for="faq in faq" v-bind:key="faq.question">
+                          <div slot="header">{{ faq.question }}</div>
+                          {{ faq.answer }}
+                        </accordion>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -181,7 +210,13 @@ export default {
       modalTagClass: 'is-primary',
       emptyStateData: [],
       emptyStateLoading: true,
-      isLoading: true
+      isLoading: true,
+      faq: [
+        {
+          question: 'What is the airspeed velocity of an unladen swallow?',
+          answer: 'what do you mean, african or european?'
+        }
+      ]
     }
   },
   methods: {

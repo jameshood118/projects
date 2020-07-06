@@ -24,6 +24,8 @@ import EmptyState from '@/components/empty-state'
 Vue.component('empty-state', EmptyState)
 import Breadcrumb from '@/components/breadcrumb'
 Vue.component('breadcrumb', Breadcrumb)
+import accordion from '@/components/accordion.vue'
+Vue.component('accordion', accordion)
 
 Vue.config.productionTip = false
 
