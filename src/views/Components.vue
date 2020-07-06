@@ -55,7 +55,7 @@
                 Loading State (Bulma, buefy and fontawesome)
               </p>
               <button
-                v-if="emptyStateLoading == true"
+                v-if="isLoading == true"
                 class="button is-primary mb-3"
                 @click="simulateLoading('loading', false)"
               >
@@ -71,8 +71,8 @@
             </header>
             <div class="card-content is-relative">
               <p>
-                This is a reuseeable wrapper for buefy's b-loading component
-                that givees you more uniform control over it. This uses bulma,
+                This is a reuseable wrapper for buefy's b-loading component that
+                gives you more uniform control over it. This uses bulma,
                 fontawesome and buefy.
               </p>
               <loading-state :isLoading="isLoading" :isFullPage="false" />
