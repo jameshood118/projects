@@ -1,5 +1,9 @@
 <template>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav
+    class="navbar is-fixed-top"
+    role="navigation"
+    aria-label="main navigation"
+  >
     <div class="navbar-brand">
       <a
         role="button"
@@ -27,33 +31,37 @@
         Components
       </router-link>
       <div class="navbar-end">
-        <a
-          href="https://github.com/jameshood118"
-          target="_blank"
-          class="navbar-item"
-        >
-          <span class="icon">
-            <i class="fab fa-github"></i>
-          </span>
-        </a>
-        <a
-          href="https://www.linkedin.com/in/jameshood118/"
-          target="_blank"
-          class="navbar-item"
-        >
-          <span class="icon">
-            <i class="fab fa-linkedin"></i>
-          </span>
-        </a>
-        <a
-          href="https://www.facebook.com/james.hood118"
-          target="_blank"
-          class="navbar-item"
-        >
-          <span class="icon">
-            <i class="fab fa-facebook"></i>
-          </span>
-        </a>
+        <div class="navbar-item">
+          <div class="buttons">
+            <a
+              href="https://github.com/jameshood118"
+              target="_blank"
+              class="px-2 py-2"
+            >
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jameshood118/"
+              target="_blank"
+              class="px-2 py-2"
+            >
+              <span class="icon">
+                <i class="fab fa-linkedin"></i>
+              </span>
+            </a>
+            <a
+              href="https://www.facebook.com/james.hood118"
+              target="_blank"
+              class="px-2 py-2"
+            >
+              <span class="icon">
+                <i class="fab fa-facebook"></i>
+              </span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </nav>
@@ -64,6 +72,9 @@ export default {
   name: 'Navbar',
   data() {
     return { mobileMenu: false }
+  },
+  mounted() {
+    document.body.classList.add('has-navbar-fixed-top')
   },
   methods: {
     toggleMobileMenu() {
