@@ -60,7 +60,7 @@ export default {
           title: 'Updates',
           date: '4/04/2020',
           message:
-            'Might use this to show off some components ive written, might delete! hah! This project uses vue 2.6.11 (@vue/cli), vue router 3.2.0, vuex and my current favorite css framework Bulma 0.9.0. Linting with eslint, using prettier with vs code as my editor.'
+            'Might use this to show off some components ive written, might delete! hah! This project uses vue 2.6.11 (@vue/cli), vue router 3.2.0, and my current favorite css framework Bulma 0.9.0. Linting with eslint, using prettier with vs code as my editor.'
         }
       ]
     }
