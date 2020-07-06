@@ -52,7 +52,39 @@
           <div class="card">
             <header class="card-header">
               <p class="card-header-title">
-                Empty State + Loading State component togther
+                Loading State (Bulma, buefy and fontawesome)
+              </p>
+              <button
+                v-if="emptyStateLoading == true"
+                class="button is-primary mb-3"
+                @click="simulateLoading('loading', false)"
+              >
+                Simulate Loading Done
+              </button>
+              <button
+                v-else
+                class="button is-primary mb-3"
+                @click="simulateLoading('loading', true)"
+              >
+                Simulate Loading Start
+              </button>
+            </header>
+            <div class="card-content is-relative">
+              <p>
+                This is a reuseeable wrapper for buefy's b-loading component
+                that givees you more uniform control over it. This uses bulma,
+                fontawesome and buefy.
+              </p>
+              <loading-state :isLoading="isLoading" :isFullPage="false" />
+            </div>
+          </div>
+        </div>
+        <div class="column is-full">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title">
+                Empty State + Loading State component (bulma and buefy with
+                fontawesome)
               </p>
             </header>
             <div class="card-content">
@@ -71,14 +103,14 @@
                         <button
                           v-if="emptyStateLoading == true"
                           class="button is-primary mb-3"
-                          @click="simulateLoadingDone"
+                          @click="simulateLoading('empty', false)"
                         >
                           Simulate Loading Done
                         </button>
                         <button
                           v-else
                           class="button is-primary mb-3"
-                          @click="simulateLoadingStart"
+                          @click="simulateLoading('empty', true)"
                         >
                           Simulate Loading Start
                         </button>
@@ -148,15 +180,17 @@ export default {
       modalMessage: '',
       modalTagClass: 'is-primary',
       emptyStateData: [],
-      emptyStateLoading: true
+      emptyStateLoading: true,
+      isLoading: true
     }
   },
   methods: {
-    simulateLoadingDone() {
-      this.emptyStateLoading = false
-    },
-    simulateLoadingStart() {
-      this.emptyStateLoading = true
+    simulateLoading(component, action) {
+      if (component == 'empty') {
+        this.emptyStateLoading = action
+      } else {
+        this.isLoading = action
+      }
     },
     handleModalClick(msg, tagClass) {
       this.modalOpen = true
