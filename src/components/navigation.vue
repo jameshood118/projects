@@ -26,7 +26,35 @@
       >
         Components
       </router-link>
-      <div class="navbar-end"></div>
+      <div class="navbar-end">
+        <a
+          href="https://github.com/jameshood118"
+          target="_blank"
+          class="navbar-item"
+        >
+          <span class="icon">
+            <i class="fab fa-github"></i>
+          </span>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/jameshood118/"
+          target="_blank"
+          class="navbar-item"
+        >
+          <span class="icon">
+            <i class="fab fa-linkedin"></i>
+          </span>
+        </a>
+        <a
+          href="https://www.facebook.com/james.hood118"
+          target="_blank"
+          class="navbar-item"
+        >
+          <span class="icon">
+            <i class="fab fa-facebook"></i>
+          </span>
+        </a>
+      </div>
     </div>
   </nav>
 </template>
