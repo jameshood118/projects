@@ -2,9 +2,7 @@
   <div>
     <section class="hero">
       <div class="hero-body">
-        <div class="container">
-          <img src="@/assets/gallerybanner.png" />
-        </div>
+        <img src="@/assets/gallerybanner.png" />
       </div>
     </section>
     <section class="section">
@@ -70,4 +68,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+.hero {
+  .hero-body {
+    text-align: center;
+  }
+}
+</style>
