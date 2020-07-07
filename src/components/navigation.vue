@@ -47,6 +47,7 @@
               href="https://github.com/jameshood118"
               target="_blank"
               class="px-2 py-2"
+              :class="lightOrDark(navTheme == 'is-dark' ? '#000000' : '')"
             >
               <span class="icon">
                 <i class="fab fa-github"></i>
@@ -56,6 +57,7 @@
               href="https://www.linkedin.com/in/jameshood118/"
               target="_blank"
               class="px-2 py-2"
+              :class="lightOrDark(navTheme == 'is-dark' ? '#000000' : '')"
             >
               <span class="icon">
                 <i class="fab fa-linkedin"></i>
@@ -65,6 +67,7 @@
               href="https://www.facebook.com/james.hood118"
               target="_blank"
               class="px-2 py-2"
+              :class="lightOrDark(navTheme == 'is-dark' ? '#000000' : '')"
             >
               <span class="icon">
                 <i class="fab fa-facebook"></i>
@@ -98,11 +101,6 @@ export default {
 <style lang="scss" scoped>
 .navbar {
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
-}
-.is-dark {
-  a.navbar-item:hover {
-    background-color: grey;
-  }
 }
 
 @media screen and (max-width: 1024px - 1px) {
