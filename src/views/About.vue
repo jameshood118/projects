@@ -113,9 +113,9 @@ export default {
       gamesList: [
         { item: 'Animal Crossing: New Horizon' },
         { item: 'Dauntless' },
-        { item: 'Ticket to Ride (boardgamee)' },
+        { item: 'Ticket to Ride (boardgame)' },
         { item: 'Munchkin' },
-        { item: 'Settlers of Catan (boardgamee)' },
+        { item: 'Settlers of Catan (boardgame)' },
         { item: '101 Ways to Die (PS4)' }
       ],
       tvList: [

@@ -9,7 +9,7 @@ const routes = [
     path: '/',
     name: 'Home',
     meta: {
-      title: 'Jamees Hood - Portfolio',
+      title: 'James Hood - Portfolio',
       breadcrumb: [
         {
           name: 'Home',
@@ -24,7 +24,7 @@ const routes = [
     path: '/about',
     name: 'About',
     meta: {
-      title: 'Jamees Hood - About',
+      title: 'James Hood - About',
       breadcrumb: [
         {
           name: 'About',
@@ -39,7 +39,7 @@ const routes = [
     path: '/components',
     name: 'Components',
     meta: {
-      title: 'Jamees Hood - Components',
+      title: 'James Hood - Components',
       breadcrumb: [
         {
           name: 'Components',
