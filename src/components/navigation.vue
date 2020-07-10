@@ -7,7 +7,7 @@
   >
     <div class="navbar-brand">
       <router-link class="navbar-item" :to="{ name: 'Home' }" exact>
-        <p class="is-family-roboto">Hood Studios</p>
+        <p class="is-family-roboto brand">Hood Studios</p>
       </router-link>
 
       <a
