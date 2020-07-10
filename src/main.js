@@ -15,6 +15,9 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 library.add(fab, fas, far)
 dom.watch()
 
+require('typeface-roboto')
+require('typeface-open-sans')
+
 import DynamicModal from '@/components/dynamic-modal'
 Vue.component('dynamic-modal', DynamicModal)
 
