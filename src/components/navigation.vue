@@ -6,6 +6,10 @@
     :class="navTheme"
   >
     <div class="navbar-brand">
+      <router-link class="navbar-item" :to="{ name: 'Home' }" exact>
+        <p class="is-family-roboto">Hood Studios</p>
+      </router-link>
+
       <a
         role="button"
         class="navbar-burger burger is-large"
