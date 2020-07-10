@@ -136,7 +136,8 @@ export default {
   }
   .navbar.is-dark {
     .navbar-menu {
-      .navbar-item {
+      .navbar-item,
+      .navbar-item .buttons a {
         color: black !important;
       }
     }
