@@ -34,15 +34,19 @@
       </div>
     </section>
     <section class="section">
-      <div class="card" v-for="items in home" :key="items.title">
-        <div class="card-content">
-          <p class="title is-6">
-            {{ items.title }} -
-            <time :datetime="items.date">{{ items.date }}</time>
-          </p>
-        </div>
-        <div class="card-content">
-          <div class="content" v-html="items.message"></div>
+      <div class="columns is-multiline">
+        <div class="column is-12" v-for="items in home" :key="items.title">
+          <div class="card">
+            <div class="card-content">
+              <p class="title is-6">
+                {{ items.title }} -
+                <time :datetime="items.date">{{ items.date }}</time>
+              </p>
+            </div>
+            <div class="card-content">
+              <div class="content" v-html="items.message"></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -58,7 +62,13 @@ export default {
       home: [
         {
           title: 'Updates',
-          date: '4/04/2020',
+          date: '7/12/2020',
+          message:
+            'I set up a new repo on github so i can tinker with gatsbyjs. Gotta say, im very impressed, it seems to solve some of the problems i see with VueJS. I am impressed with its builtin graphql capabilities, and i cant wait to see how it would fair hooked up to some real data!'
+        },
+        {
+          title: 'Updates',
+          date: '7/04/2020',
           message:
             'Might use this to show off some components ive written, might delete! hah! This project uses vue 2.6.11 (@vue/cli), vue router 3.2.0, and my current favorite css framework Bulma 0.9.0. Linting with eslint, with vs code as my editor.'
         }
