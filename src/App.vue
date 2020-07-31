@@ -12,11 +12,11 @@
 import Navigation from './components/navigation.vue'
 import BottomFooter from './components/bottom-footer.vue'
 export default {
-  name: 'App',
-  components: {
-    Navigation,
-    BottomFooter
-  }
+	name: 'App',
+	components: {
+		Navigation,
+		BottomFooter
+	}
 }
 </script>
 

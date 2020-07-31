@@ -1,32 +1,36 @@
 module.exports = {
-  root: true,
-
-  env: {
-    node: true
-  },
-
-  rules: {
-    'no-console':
-      process.env.NODE_ENV === 'production'
-        ? ['error', { allow: ['warn', 'error'] }]
-        : ['warn', { allow: ['warn', 'error'] }],
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
-    'space-before-function-paren': ['error', 'never'],
-    'no-unused-vars': 'error',
-    'prettier/prettier': [
-      'error',
-      {
-        trailingComma: 'none',
-        tabWidth: 2,
-        singleQuote: true,
-        semi: false
-      }
-    ]
-  },
-
-  parserOptions: {
-    parser: 'babel-eslint'
-  },
-
-  extends: ['plugin:vue/essential', '@vue/prettier']
+	'env': {
+		'browser': true,
+		'es2020': true,
+		'node': true
+	},
+	'extends': [
+		'eslint:recommended',
+		'plugin:vue/essential'
+	],
+	'parserOptions': {
+		'ecmaVersion': 11,
+		'sourceType': 'module'
+	},
+	'plugins': [
+		'vue'
+	],
+	'rules': {
+		'indent': [
+			'error',
+			'tab'
+		],
+		'linebreak-style': [
+			'error',
+			'windows'
+		],
+		'quotes': [
+			'error',
+			'single'
+		],
+		'semi': [
+			'error',
+			'never'
+		]
+	}
 }
