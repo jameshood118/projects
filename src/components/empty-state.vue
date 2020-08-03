@@ -89,57 +89,57 @@
 
 <script>
 export default {
-  name: 'empty-state',
-  props: {
-    data: {
-      default: null
-    },
-    isCard: {
-      type: Boolean,
-      default: true
-    },
-    isLoading: {
-      type: Boolean,
-      default: true
-    },
-    helpLink: {
-      type: String,
-      default: 'http://www.google.com'
-    },
-    customMessage: {
-      type: String,
-      default: ''
-    },
-    searchIcon: {
-      type: String,
-      default: 'fas fa-search'
-    },
-    searchIconSize: {
-      type: String,
-      default: 'fa-5x'
-    },
-    search: {
-      type: Boolean,
-      default: false
-    }
-  },
-  computed: {
-    isIDPage() {
-      return (
-        (this.$route.params.id ||
+	name: 'empty-state',
+	props: {
+		data: {
+			default: null
+		},
+		isCard: {
+			type: Boolean,
+			default: true
+		},
+		isLoading: {
+			type: Boolean,
+			default: true
+		},
+		helpLink: {
+			type: String,
+			default: 'http://www.google.com'
+		},
+		customMessage: {
+			type: String,
+			default: ''
+		},
+		searchIcon: {
+			type: String,
+			default: 'fas fa-search'
+		},
+		searchIconSize: {
+			type: String,
+			default: 'fa-5x'
+		},
+		search: {
+			type: Boolean,
+			default: false
+		}
+	},
+	computed: {
+		isIDPage() {
+			return (
+				(this.$route.params.id ||
           this.$route.params.number ||
           this.$route.params.notebookID ||
           this.$route.params.noteFolderID ||
           this.$route.params.profile) &&
         !this.data
-      )
-    },
-    hasCustomMessage() {
-      return (
-        !!this.$slots['custom-message'] || !!this.$scopedSlots['custom-message']
-      )
-    }
-  }
+			)
+		},
+		hasCustomMessage() {
+			return (
+				!!this.$slots['custom-message'] || !!this.$scopedSlots['custom-message']
+			)
+		}
+	}
 }
 </script>
 

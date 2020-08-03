@@ -202,42 +202,42 @@
 
 <script>
 export default {
-  name: 'components',
-  data() {
-    return {
-      modalOpen: false,
-      modalMessage: '',
-      modalTagClass: 'is-primary',
-      emptyStateData: [],
-      emptyStateLoading: true,
-      isLoading: true,
-      faq: [
-        {
-          question: 'What is the airspeed velocity of an unladen swallow?',
-          answer: 'what do you mean, african or european?'
-        }
-      ]
-    }
-  },
-  methods: {
-    simulateLoading(component, action) {
-      if (component == 'empty') {
-        this.emptyStateLoading = action
-      } else {
-        this.isLoading = action
-      }
-    },
-    handleModalClick(msg, tagClass) {
-      this.modalOpen = true
-      this.modalMessage = msg
-      this.modalTagClass = tagClass
-    },
-    handleModalClose() {
-      this.modalOpen = false
-      this.modalMessage = ''
-      this.modalTagClass = ''
-    }
-  }
+	name: 'components',
+	data() {
+		return {
+			modalOpen: false,
+			modalMessage: '',
+			modalTagClass: 'is-primary',
+			emptyStateData: [],
+			emptyStateLoading: true,
+			isLoading: true,
+			faq: [
+				{
+					question: 'What is the airspeed velocity of an unladen swallow?',
+					answer: 'what do you mean, african or european?'
+				}
+			]
+		}
+	},
+	methods: {
+		simulateLoading(component, action) {
+			if (component == 'empty') {
+				this.emptyStateLoading = action
+			} else {
+				this.isLoading = action
+			}
+		},
+		handleModalClick(msg, tagClass) {
+			this.modalOpen = true
+			this.modalMessage = msg
+			this.modalTagClass = tagClass
+		},
+		handleModalClose() {
+			this.modalOpen = false
+			this.modalMessage = ''
+			this.modalTagClass = ''
+		}
+	}
 }
 </script>
 

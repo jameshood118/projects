@@ -21,15 +21,15 @@
 
 <script>
 export default {
-  name: 'ErrorView',
-  methods: {
-    goHome() {
-      if (window.history.length > 2) {
-        this.$router.go(-1)
-      } else {
-        this.$router.replace('/')
-      }
-    }
-  }
+	name: 'ErrorView',
+	methods: {
+		goHome() {
+			if (window.history.length > 2) {
+				this.$router.go(-1)
+			} else {
+				this.$router.replace('/')
+			}
+		}
+	}
 }
 </script>

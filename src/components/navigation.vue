@@ -87,19 +87,19 @@
 <script>
 import lightOrDark from '@/mixins/lightOrDark'
 export default {
-  name: 'Navbar',
-  mixins: [lightOrDark],
-  data() {
-    return { mobileMenu: false, navTheme: 'is-dark' }
-  },
-  mounted() {
-    document.body.classList.add('has-navbar-fixed-top')
-  },
-  methods: {
-    toggleMobileMenu() {
-      this.mobileMenu = !this.mobileMenu
-    }
-  }
+	name: 'Navbar',
+	mixins: [lightOrDark],
+	data() {
+		return { mobileMenu: false, navTheme: 'is-dark' }
+	},
+	mounted() {
+		document.body.classList.add('has-navbar-fixed-top')
+	},
+	methods: {
+		toggleMobileMenu() {
+			this.mobileMenu = !this.mobileMenu
+		}
+	}
 }
 </script>
 <style lang="scss" scoped>

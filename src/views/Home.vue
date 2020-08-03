@@ -55,26 +55,26 @@
 
 <script>
 export default {
-  name: 'Home',
-  data() {
-    return {
-      title: 'Welcome to my Portfolio',
-      home: [
-        {
-          title: 'Updates',
-          date: '7/12/2020',
-          message:
+	name: 'Home',
+	data() {
+		return {
+			title: 'Welcome to my Portfolio',
+			home: [
+				{
+					title: 'Updates',
+					date: '7/12/2020',
+					message:
             'I set up a new repo on github so i can tinker with gatsbyjs. Gotta say, im very impressed, it seems to solve some of the problems i see with VueJS. I am impressed with its builtin graphql capabilities, and i cant wait to see how it would fair hooked up to some real data!'
-        },
-        {
-          title: 'Updates',
-          date: '7/04/2020',
-          message:
+				},
+				{
+					title: 'Updates',
+					date: '7/04/2020',
+					message:
             'Might use this to show off some components ive written, might delete! hah! This project uses vue 2.6.11 (@vue/cli), vue router 3.2.0, and my current favorite css framework Bulma 0.9.0. Linting with eslint, with vs code as my editor.'
-        }
-      ]
-    }
-  }
+				}
+			]
+		}
+	}
 }
 </script>
 
