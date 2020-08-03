@@ -13,13 +13,10 @@ module.exports = {
 		'vue'
 	],
 	'rules': {
+		'no-console': process.env.NODE_ENV === 'production' ? ['error', {allow: ['warn', 'error']}] : ['warn', {allow: ['warn', 'error']}],
 		'indent': [
 			'error',
 			'tab'
-		],
-		'linebreak-style': [
-			'error',
-			'windows'
 		],
 		'quotes': [
 			'error',
