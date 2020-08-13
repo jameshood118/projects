@@ -70,7 +70,7 @@
               >
                 Simulate Loading Start
               </button>
-              <div class="is-relative">
+              <div class="is-relative" style="height: 250px">
               <p>
                 This is a reuseable wrapper for buefy's b-loading component that
                 gives you more uniform control over it. This uses bulma,
