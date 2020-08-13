@@ -1,7 +1,7 @@
 <template>
   <div>
     <breadcrumb />
-    <div class="columns is-multiline is-mobile">
+    <div class="columns is-multiline">
       <div class="column is-12">
         <div class="card">
           <div class="card-content">

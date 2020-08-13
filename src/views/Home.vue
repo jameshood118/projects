@@ -35,7 +35,7 @@
     </section>
     <section class="section">
       <div class="columns is-multiline">
-        <div class="column is-12" v-for="items in home" :key="items.title">
+        <div class="column is-12" v-for="items in home" :key="items.id">
           <div class="card">
             <div class="card-content">
               <p class="title is-6">
@@ -61,12 +61,14 @@ export default {
 			title: 'Welcome to my Portfolio',
 			home: [
 				{
+          id: 0,
 					title: 'Updates',
 					date: '7/12/2020',
 					message:
             'I set up a new repo on github so i can tinker with gatsbyjs. Gotta say, im very impressed, it seems to solve some of the problems i see with VueJS. I am impressed with its builtin graphql capabilities, and i cant wait to see how it would fair hooked up to some real data!'
 				},
 				{
+          id: 1,
 					title: 'Updates',
 					date: '7/04/2020',
 					message:

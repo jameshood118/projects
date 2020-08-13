@@ -54,7 +54,9 @@
               <p class="card-header-title">
                 Loading State (Bulma, buefy and fontawesome)
               </p>
-              <button
+            </header>
+            <div class="card-content">
+                            <button
                 v-if="isLoading == true"
                 class="button is-primary mb-3"
                 @click="simulateLoading('loading', false)"
@@ -68,14 +70,14 @@
               >
                 Simulate Loading Start
               </button>
-            </header>
-            <div class="card-content is-relative">
+              <div class="is-relative">
               <p>
                 This is a reuseable wrapper for buefy's b-loading component that
                 gives you more uniform control over it. This uses bulma,
                 fontawesome and buefy.
               </p>
               <loading-state :isLoading="isLoading" :isFullPage="false" />
+              </div>
             </div>
           </div>
         </div>
@@ -93,13 +95,8 @@
                 from whatever, searchQuery variable is up to you. This does use
                 font awesome for icons. But you should too.
               </p>
-
-              <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                  <article class="tile is-child notification is-success">
-                    <div class="content">
                       <div class="content">
-                        <p>Emmpty State Default with no data</p>
+                        <p>Empty State Default with no data</p>
                         <button
                           v-if="emptyStateLoading == true"
                           class="button is-primary mb-3"
@@ -112,7 +109,7 @@
                           class="button is-primary mb-3"
                           @click="simulateLoading('empty', true)"
                         >
-                          Simulate Loading Start
+                          Simulate Loading Start  
                         </button>
                         <empty-state
                           :data="emptyStateData"
@@ -120,10 +117,6 @@
                           key="emptyStateWithoutData"
                         />
                       </div>
-                    </div>
-                  </article>
-                </div>
-              </div>
             </div>
           </div>
         </div>
