@@ -28,15 +28,15 @@
     <div class="navbar-menu" :class="{ 'is-active': mobileMenu }">
       <div class="navbar-start"></div>
       <template v-for="route in $router.options.routes">
-        <router-link
+        <a
           :key="route.path"
-          :to="{ name: route.name }"
+          @click="handleNav(route.name)"
           class="navbar-item"
           :class="lightOrDark(navTheme == 'is-dark' ? '#000000' : '')"
           v-if="route.path != '*'"
         >
           {{ route.name }}
-        </router-link>
+        </a>
       </template>
       <div class="navbar-end">
         <div class="navbar-item">
@@ -92,6 +92,16 @@ export default {
   methods: {
     toggleMobileMenu() {
       this.mobileMenu = !this.mobileMenu
+    },
+    handleNav(name) {
+      if (name == this.$route.name) {
+        return
+      } else {
+        if (this.mobileMenu == true) {
+          this.mobileMenu = false
+        }
+        this.$router.push({ name: name })
+      }
     }
   }
 }
@@ -99,6 +109,9 @@ export default {
 <style lang="scss" scoped>
 .navbar {
   box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+}
+.has-text-light:hover {
+  color: black !important;
 }
 
 @media screen and (max-width: 1024px - 1px) {
