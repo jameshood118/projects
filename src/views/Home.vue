@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero">
+    <section class="hero is-hidden-touch">
       <div class="hero-body">
         <img src="@/assets/gallerybanner.png" />
       </div>
