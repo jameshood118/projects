@@ -56,7 +56,7 @@
               </p>
             </header>
             <div class="card-content">
-                            <button
+              <button
                 v-if="isLoading == true"
                 class="button is-primary mb-3"
                 @click="simulateLoading('loading', false)"
@@ -71,12 +71,12 @@
                 Simulate Loading Start
               </button>
               <div class="is-relative" style="height: 250px">
-              <p>
-                This is a reuseable wrapper for buefy's b-loading component that
-                gives you more uniform control over it. This uses bulma,
-                fontawesome and buefy.
-              </p>
-              <loading-state :isLoading="isLoading" :isFullPage="false" />
+                <p>
+                  This is a reuseable wrapper for buefy's b-loading component
+                  that gives you more uniform control over it. This uses bulma,
+                  fontawesome and buefy.
+                </p>
+                <loading-state :isLoading="isLoading" :isFullPage="false" />
               </div>
             </div>
           </div>
@@ -95,28 +95,28 @@
                 from whatever, searchQuery variable is up to you. This does use
                 font awesome for icons. But you should too.
               </p>
-                      <div class="content">
-                        <p>Empty State Default with no data</p>
-                        <button
-                          v-if="emptyStateLoading == true"
-                          class="button is-primary mb-3"
-                          @click="simulateLoading('empty', false)"
-                        >
-                          Simulate Loading Done
-                        </button>
-                        <button
-                          v-else
-                          class="button is-primary mb-3"
-                          @click="simulateLoading('empty', true)"
-                        >
-                          Simulate Loading Start  
-                        </button>
-                        <empty-state
-                          :data="emptyStateData"
-                          :isLoading="emptyStateLoading"
-                          key="emptyStateWithoutData"
-                        />
-                      </div>
+              <div class="content">
+                <p>Empty State Default with no data</p>
+                <button
+                  v-if="emptyStateLoading == true"
+                  class="button is-primary mb-3"
+                  @click="simulateLoading('empty', false)"
+                >
+                  Simulate Loading Done
+                </button>
+                <button
+                  v-else
+                  class="button is-primary mb-3"
+                  @click="simulateLoading('empty', true)"
+                >
+                  Simulate Loading Start
+                </button>
+                <empty-state
+                  :data="emptyStateData"
+                  :isLoading="emptyStateLoading"
+                  key="emptyStateWithoutData"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -195,42 +195,42 @@
 
 <script>
 export default {
-	name: 'components',
-	data() {
-		return {
-			modalOpen: false,
-			modalMessage: '',
-			modalTagClass: 'is-primary',
-			emptyStateData: [],
-			emptyStateLoading: true,
-			isLoading: true,
-			faq: [
-				{
-					question: 'What is the airspeed velocity of an unladen swallow?',
-					answer: 'what do you mean, african or european?'
-				}
-			]
-		}
-	},
-	methods: {
-		simulateLoading(component, action) {
-			if (component == 'empty') {
-				this.emptyStateLoading = action
-			} else {
-				this.isLoading = action
-			}
-		},
-		handleModalClick(msg, tagClass) {
-			this.modalOpen = true
-			this.modalMessage = msg
-			this.modalTagClass = tagClass
-		},
-		handleModalClose() {
-			this.modalOpen = false
-			this.modalMessage = ''
-			this.modalTagClass = ''
-		}
-	}
+  name: 'components',
+  data() {
+    return {
+      modalOpen: false,
+      modalMessage: '',
+      modalTagClass: 'is-primary',
+      emptyStateData: [],
+      emptyStateLoading: true,
+      isLoading: true,
+      faq: [
+        {
+          question: 'What is the airspeed velocity of an unladen swallow?',
+          answer: 'what do you mean, african or european?'
+        }
+      ]
+    }
+  },
+  methods: {
+    simulateLoading(component, action) {
+      if (component == 'empty') {
+        this.emptyStateLoading = action
+      } else {
+        this.isLoading = action
+      }
+    },
+    handleModalClick(msg, tagClass) {
+      this.modalOpen = true
+      this.modalMessage = msg
+      this.modalTagClass = tagClass
+    },
+    handleModalClose() {
+      this.modalOpen = false
+      this.modalMessage = ''
+      this.modalTagClass = ''
+    }
+  }
 }
 </script>
 
