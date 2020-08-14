@@ -157,7 +157,7 @@
                   <div class="container">
                     <div class="columns">
                       <div class="column is-full">
-                        <p class="title is-2 has-text-black">
+                        <p class="title is-size-6 has-text-black">
                           Frequently Asked Questions
                         </p>
                         <accordion v-for="faq in faq" v-bind:key="faq.question">
