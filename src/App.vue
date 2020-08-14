@@ -1,10 +1,10 @@
 <template>
   <div id="app">
     <Navigation />
-    <div class="container is-fluid">
+    <main>
       <router-view />
-      <BottomFooter />
-    </div>
+    </main>
+    <BottomFooter />
   </div>
 </template>
 
@@ -12,11 +12,11 @@
 import Navigation from './components/navigation.vue'
 import BottomFooter from './components/bottom-footer.vue'
 export default {
-	name: 'App',
-	components: {
-		Navigation,
-		BottomFooter
-	}
+  name: 'App',
+  components: {
+    Navigation,
+    BottomFooter
+  }
 }
 </script>
 

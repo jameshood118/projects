@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container is-fluid">
     <breadcrumb />
     <div class="columns is-multiline">
       <div class="column is-12">
@@ -96,99 +96,99 @@
 
 <script>
 export default {
-	name: 'About',
-	data() {
-		return {
-			generalList: [
-				{ item: 'Tabletop RPG\'s' },
-				{ item: 'MMORPG\'s' },
-				{ item: 'Reading various books' },
-				{ item: 'Reading random wikipedia entries' },
-				{ item: 'Listening to music (all sorts)' },
-				{ item: 'Playing Guitar' },
-				{ item: 'Video Games' },
-				{ item: 'Movies with my wife!' },
-				{ item: 'Card games with friends' }
-			],
-			gamesList: [
-				{ item: 'Animal Crossing: New Horizon' },
-				{ item: 'Dauntless' },
-				{ item: 'Ticket to Ride (boardgame)' },
-				{ item: 'Munchkin' },
-				{ item: 'Settlers of Catan (boardgame)' },
-				{ item: '101 Ways to Die (PS4)' }
-			],
-			tvList: [
-				{ item: 'Archer' },
-				{ item: 'Rick & Morty' },
-				{ item: 'The IT Crowd' },
-				{ item: 'Big Bang Theory' },
-				{ item: 'Heroes' },
-				{ item: 'Arrested Development' },
-				{ item: 'Community' },
-				{ item: 'Good Eats' },
-				{ item: 'Modern Marvels' },
-				{ item: 'How its Made' },
-				{ item: 'Lost' },
-				{ item: 'Iron Chef (both Original and American)' },
-				{ item: 'House, MD' },
-				{ item: 'Scrubs' }
-			],
-			heroList: [
-				{ item: 'Deadpool' },
-				{ item: 'Wolverine' },
-				{ item: 'Nightcrawler' },
-				{ item: 'Batman' },
-				{ item: 'Gambit' }
-			],
-			writingList: [
-				{
-					item:
+  name: 'About',
+  data() {
+    return {
+      generalList: [
+        { item: 'Tabletop RPGs' },
+        { item: 'MMORPGs' },
+        { item: 'Reading various books' },
+        { item: 'Reading random wikipedia entries' },
+        { item: 'Listening to music (all sorts)' },
+        { item: 'Playing Guitar' },
+        { item: 'Video Games' },
+        { item: 'Movies with my wife!' },
+        { item: 'Card games with friends' }
+      ],
+      gamesList: [
+        { item: 'Animal Crossing: New Horizon' },
+        { item: 'Dauntless' },
+        { item: 'Ticket to Ride (boardgame)' },
+        { item: 'Munchkin' },
+        { item: 'Settlers of Catan (boardgame)' },
+        { item: '101 Ways to Die (PS4)' }
+      ],
+      tvList: [
+        { item: 'Archer' },
+        { item: 'Rick & Morty' },
+        { item: 'The IT Crowd' },
+        { item: 'Big Bang Theory' },
+        { item: 'Heroes' },
+        { item: 'Arrested Development' },
+        { item: 'Community' },
+        { item: 'Good Eats' },
+        { item: 'Modern Marvels' },
+        { item: 'How its Made' },
+        { item: 'Lost' },
+        { item: 'Iron Chef (both Original and American)' },
+        { item: 'House, MD' },
+        { item: 'Scrubs' }
+      ],
+      heroList: [
+        { item: 'Deadpool' },
+        { item: 'Wolverine' },
+        { item: 'Nightcrawler' },
+        { item: 'Batman' },
+        { item: 'Gambit' }
+      ],
+      writingList: [
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYa1loamZHc29XQ1E/edit?usp=sharing" target="_blank">Poems/Songs</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYd2JKb2VBWkNYLWc/edit?usp=sharing" target="_blank">Heroes Unlimited: Invasion Denied</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYa1RmM2VwZ0V5UDQ/edit?usp=sharing" target="_blank">Adventure</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYcG51MXUwdFFUM3M/edit?usp=sharing" target="_blank">Vigiliance</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYSjZTaHc1aHdnaVU/edit?usp=sharing" target="_blank">Battle of the Wyrm</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYRmdlYXdaQ0pIUDA/edit?usp=sharing" target="_blank">Battle of the Wyrm History</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYcENmT3lueTNLdVk/edit?usp=sharing" target="_blank">Heroes Unlimited: 2nd Game</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYeGRuV3FnZ01mN2c/edit?usp=sharing" target="_blank">Mage The Acension Chronicle</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYUFVobUNBRTVJaEE/edit?usp=sharing" target="_blank">Feng Shui Game</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYZzUtb0FWaGtyMXM/edit?usp=sharing" target="_blank">Waterlogged</a>'
-				},
-				{
-					item:
+        },
+        {
+          item:
             '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYZzUtb0FWaGtyMXM/edit?usp=sharing" target="_blank">Nuked</a>'
-				}
-			]
-		}
-	}
+        }
+      ]
+    }
+  }
 }
 </script>
 

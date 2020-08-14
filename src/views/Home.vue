@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container is-fluid">
     <section class="hero is-hidden-touch">
       <div class="hero-body">
         <img src="@/assets/gallerybanner.png" />

@@ -12,7 +12,6 @@ module.exports = {
       process.env.NODE_ENV === 'production'
         ? ['error', { allow: ['warn', 'error'] }]
         : ['warn', { allow: ['warn', 'error'] }],
-    quotes: ['error', 'single'],
     semi: ['error', 'never']
   }
 }
