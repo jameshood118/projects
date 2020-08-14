@@ -6,7 +6,11 @@
     :class="navTheme"
   >
     <div class="navbar-brand">
-      <router-link class="navbar-item" :to="{ name: 'Home' }" exact>
+      <router-link
+        class="navbar-item is-hidden-touch"
+        :to="{ name: 'Home' }"
+        exact
+      >
         <p class="is-family-roboto brand">Hood Studios</p>
       </router-link>
 
