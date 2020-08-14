@@ -23,27 +23,17 @@
     </div>
     <div class="navbar-menu" :class="{ 'is-active': mobileMenu }">
       <div class="navbar-start"></div>
-      <router-link
-        :to="{ name: 'Home' }"
-        class="navbar-item"
-        :class="lightOrDark(navTheme == 'is-dark' ? '#000000' : '')"
-      >
-        Home
-      </router-link>
-      <router-link
-        :to="{ name: 'About' }"
-        class="navbar-item"
-        :class="lightOrDark(navTheme == 'is-dark' ? '#000000' : '')"
-      >
-        About
-      </router-link>
-      <router-link
-        :to="{ name: 'Components' }"
-        class="navbar-item"
-        :class="lightOrDark(navTheme == 'is-dark' ? '#000000' : '')"
-      >
-        Components
-      </router-link>
+      <template v-for="route in $router.options.routes">
+        <router-link
+          :key="route.path"
+          :to="{ name: route.name }"
+          class="navbar-item"
+          :class="lightOrDark(navTheme == 'is-dark' ? '#000000' : '')"
+          v-if="route.path != '*'"
+        >
+          {{ route.name }}
+        </router-link>
+      </template>
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
@@ -87,19 +77,19 @@
 <script>
 import lightOrDark from '@/mixins/lightOrDark'
 export default {
-	name: 'Navbar',
-	mixins: [lightOrDark],
-	data() {
-		return { mobileMenu: false, navTheme: 'is-dark' }
-	},
-	mounted() {
-		document.body.classList.add('has-navbar-fixed-top')
-	},
-	methods: {
-		toggleMobileMenu() {
-			this.mobileMenu = !this.mobileMenu
-		}
-	}
+  name: 'Navbar',
+  mixins: [lightOrDark],
+  data() {
+    return { mobileMenu: false, navTheme: 'is-dark' }
+  },
+  mounted() {
+    document.body.classList.add('has-navbar-fixed-top')
+  },
+  methods: {
+    toggleMobileMenu() {
+      this.mobileMenu = !this.mobileMenu
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
