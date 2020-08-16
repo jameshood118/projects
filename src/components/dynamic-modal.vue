@@ -27,20 +27,20 @@
 
 <script>
 export default {
-	name: 'dynamic-modal',
-	props: {
-		open: {
-			default: false
-		}
-	},
-	data() {
-		return {}
-	},
-	methods: {
-		close() {
-			this.$emit('close')
-		}
-	}
+  name: 'dynamic-modal',
+  props: {
+    open: {
+      default: false
+    }
+  },
+  data() {
+    return {}
+  },
+  methods: {
+    close() {
+      this.$emit('close')
+    }
+  }
 }
 </script>
 

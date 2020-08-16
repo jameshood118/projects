@@ -32,37 +32,37 @@
 
 <script>
 export default {
-	name: 'breadcrumb',
-	props: {
-		currentPage: {
-			type: String,
-			default: ''
-		}
-	},
-	data() {
-		return { breadcrumbList: [] }
-	},
-	mounted() {
-		this.updateList()
-	},
-	watch: {
-		$route() {
-			this.updateList()
-		}
-	},
-	methods: {
-		navigateAway() {
-			if (this.$route.query.from) {
-				this.$router.push({
-					path: this.$route.query.from
-				})
-			} else {
-				this.$router.go(-1)
-			}
-		},
-		updateList() {
-			this.breadcrumbList = this.$route.meta.breadcrumb
-		}
-	}
+  name: 'breadcrumb',
+  props: {
+    currentPage: {
+      type: String,
+      default: ''
+    }
+  },
+  data() {
+    return { breadcrumbList: [] }
+  },
+  mounted() {
+    this.updateList()
+  },
+  watch: {
+    $route() {
+      this.updateList()
+    }
+  },
+  methods: {
+    navigateAway() {
+      if (this.$route.query.from) {
+        this.$router.push({
+          path: this.$route.query.from
+        })
+      } else {
+        this.$router.go(-1)
+      }
+    },
+    updateList() {
+      this.breadcrumbList = this.$route.meta.breadcrumb
+    }
+  }
 }
 </script>

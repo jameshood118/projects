@@ -8,33 +8,33 @@
 
 <script>
 export default {
-	name: 'loading-state',
-	props: {
-		icon: {
-			type: String,
-			default: 'fas fa-spinner fa-pulse'
-		},
-		iconSize: {
-			type: String,
-			default: 'fa-3x'
-		},
-		iconColor: {
-			type: String,
-			default: 'has-text-primary'
-		},
-		iconSpanSize: {
-			type: String,
-			default: 'is-large'
-		},
-		isFullPage: {
-			type: Boolean,
-			default: false
-		},
-		isLoading: {
-			type: Boolean,
-			default: true
-		}
-	}
+  name: 'loading-state',
+  props: {
+    icon: {
+      type: String,
+      default: 'fas fa-spinner fa-pulse'
+    },
+    iconSize: {
+      type: String,
+      default: 'fa-3x'
+    },
+    iconColor: {
+      type: String,
+      default: 'has-text-primary'
+    },
+    iconSpanSize: {
+      type: String,
+      default: 'is-large'
+    },
+    isFullPage: {
+      type: Boolean,
+      default: false
+    },
+    isLoading: {
+      type: Boolean,
+      default: true
+    }
+  }
 }
 </script>
 <style lang="scss">
