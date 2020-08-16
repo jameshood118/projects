@@ -35,7 +35,11 @@
     </section>
     <section class="section">
       <div class="columns is-multiline">
-        <div class="column is-12" v-for="items in home" :key="items.id">
+        <div
+          class="column is-12"
+          v-for="items in $store.state.home.blog"
+          :key="items.id"
+        >
           <div class="card">
             <div class="card-content">
               <p class="title is-6">
@@ -63,12 +67,19 @@ export default {
         {
           id: 0,
           title: 'Updates',
+          date: '8/16/2020',
+          message:
+            'Just finished re-adding vuex to this site, wanted to use it like a data store, a single place i could write data to without having to set up a database, or store all of the items in their specific pages. This way i could also use that data should i want to write badge like components, etc. Vuex is very powerful. I have also set up a number of projects on my github (some react, some gatsby etc) as well as setting up my profile readme. Clever boy'
+        },
+        {
+          id: 1,
+          title: 'Updates',
           date: '7/12/2020',
           message:
             'I set up a new repo on github so i can tinker with gatsbyjs. Gotta say, im very impressed, it seems to solve some of the problems i see with VueJS. I am impressed with its builtin graphql capabilities, and i cant wait to see how it would fair hooked up to some real data!'
         },
         {
-          id: 1,
+          id: 2,
           title: 'Updates',
           date: '7/04/2020',
           message:

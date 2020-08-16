@@ -28,6 +28,7 @@ Vue.component('empty-state', EmptyState)
 import Breadcrumb from '@/components/breadcrumb'
 Vue.component('breadcrumb', Breadcrumb)
 import accordion from '@/components/accordion.vue'
+import store from './store'
 Vue.component('accordion', accordion)
 
 Vue.config.productionTip = false
@@ -43,5 +44,6 @@ Vue.filter('truncate', (body, length) => {
 
 new Vue({
   router,
+  store,
   render: h => h(App)
 }).$mount('#app')
