@@ -1,5 +1,5 @@
 <template>
-  <div class="continer is-fluid">
+  <div class="container is-fluid">
     <breadcrumb />
     <section class="section">
       <div class="columns is-multiline">
