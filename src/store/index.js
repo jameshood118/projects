@@ -100,7 +100,7 @@ export default new Vuex.Store({
           title: 'Updates',
           date: '8/16/2020',
           message:
-            '<p>Just finished re-adding vuex to this site, wanted to use it like a data store, a single place i could write data to without having to set up a database, or store all of the items in their specific pages. This way i could also use that data should i want to write badge like components, etc. Vuex is very powerful. I have also set up a number of projects on my github (some react, some gatsby etc) as well as setting up my profile readme. Clever boy.</p><p> This isnt some massive project, this is a SPA vueJS portfolio to show the world i can code in vueJS. This site was set up using @vue/cli, definitely a much faster set up than before.</p>'
+            '<p>Just finished re-adding vuex to this site, wanted to use it as a data store, a single place i could write data to without having to set up a database, or store all of the items in their specific pages. This way i could also use that data should i want to write badge like components, etc. Vuex is very powerful. I have also set up a number of projects on my github (some react, some gatsby etc) as well as setting up my profile readme. Clever boy.</p><p> This isnt some massive project, this is a SPA vueJS portfolio to show the world i can code in vueJS. This site was set up using @vue/cli, definitely a much faster set up than before.</p>'
         },
         {
           id: 1,
