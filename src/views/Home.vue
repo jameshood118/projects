@@ -62,30 +62,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      title: 'Welcome to my Portfolio',
-      home: [
-        {
-          id: 0,
-          title: 'Updates',
-          date: '8/16/2020',
-          message:
-            'Just finished re-adding vuex to this site, wanted to use it like a data store, a single place i could write data to without having to set up a database, or store all of the items in their specific pages. This way i could also use that data should i want to write badge like components, etc. Vuex is very powerful. I have also set up a number of projects on my github (some react, some gatsby etc) as well as setting up my profile readme. Clever boy'
-        },
-        {
-          id: 1,
-          title: 'Updates',
-          date: '7/12/2020',
-          message:
-            'I set up a new repo on github so i can tinker with gatsbyjs. Gotta say, im very impressed, it seems to solve some of the problems i see with VueJS. I am impressed with its builtin graphql capabilities, and i cant wait to see how it would fair hooked up to some real data!'
-        },
-        {
-          id: 2,
-          title: 'Updates',
-          date: '7/04/2020',
-          message:
-            'Might use this to show off some components ive written, might delete! hah! This project uses vue 2.6.11 (@vue/cli), vue router 3.2.0, and my current favorite css framework Bulma 0.9.0. Linting with eslint, with vs code as my editor.'
-        }
-      ]
+      title: 'Welcome to my Portfolio'
     }
   }
 }
