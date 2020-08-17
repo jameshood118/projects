@@ -149,7 +149,7 @@
                 they are on be the current page (perhaps you have a complex tree
                 structure on your site
               </p>
-              <breadcrumb :currentPage="'show off components flexibility'" />
+              <breadcrumb :currentPage="'Blog page number 50000'" />
             </div>
           </div>
         </div>
