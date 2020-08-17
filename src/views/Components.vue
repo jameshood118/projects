@@ -194,7 +194,11 @@
       </template>
       <template slot="modal-footer-buttons">
         <p class="control">
-          <button class="button is-primary" @click="handleModalClose">
+          <button
+            class="button"
+            :class="modalButtonClass"
+            @click="handleModalClose"
+          >
             Call to action
           </button>
         </p>
@@ -211,6 +215,7 @@ export default {
       modalOpen: false,
       modalMessage: '',
       modalTagClass: 'is-primary',
+      modalButtonClass: 'is-primary',
       modalTitle: '',
       emptyStateData: [],
       emptyStateLoading: true,
@@ -236,12 +241,14 @@ export default {
       this.modalTitle = title
       this.modalMessage = msg
       this.modalTagClass = tagClass
+      this.modalButtonClass = tagClass
     },
     handleModalClose() {
       this.modalOpen = false
       this.modalTitle = ''
       this.modalMessage = ''
-      this.modalTagClass = ''
+      this.modalTagClass = 'is-primary'
+      this.modalButtonClass = 'is-primary'
     }
   }
 }
