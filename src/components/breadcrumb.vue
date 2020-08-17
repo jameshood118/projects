@@ -24,7 +24,7 @@
       </template>
 
       <li v-if="currentPage" class="is-active">
-        <a aria-current="page">{{ currentPage }}</a>
+        <a aria-current="page">{{ currentPage | truncate(30) }}</a>
       </li>
     </ul>
   </nav>

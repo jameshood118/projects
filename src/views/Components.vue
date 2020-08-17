@@ -149,7 +149,11 @@
                 they are on be the current page (perhaps you have a complex tree
                 structure on your site
               </p>
-              <breadcrumb :currentPage="'Blog page number 50000'" />
+              <breadcrumb
+                :currentPage="
+                  'Blog #1345 Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb'
+                "
+              />
             </div>
           </div>
         </div>
