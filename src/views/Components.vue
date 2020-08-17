@@ -145,9 +145,9 @@
                 clarity, additionally this method lets you focus on the values
                 from the router. This component is currently used on this site.
                 This can take in a :currentPage property as well, in case you
-                want to use your breadcrumbs as a unifom path and have the
-                finally page they land on be the current page (perhaps you have
-                a complex tree structure on your site
+                want to use your breadcrumbs as a unifom path and have the page
+                they are on be the current page (perhaps you have a complex tree
+                structure on your site
               </p>
               <breadcrumb :currentPage="'show off components flexibility'" />
             </div>
