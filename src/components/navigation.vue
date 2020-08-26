@@ -52,6 +52,16 @@
               </span>
             </a>
             <a
+              href="https://codepen.io/jameshood118"
+              target="_blank"
+              class="px-2 py-2"
+              :class="lightOrDark(navTheme == 'is-dark' ? '#000000' : '')"
+            >
+              <span class="icon">
+                <i class="fab fa-codepen"></i>
+              </span>
+            </a>
+            <a
               href="https://www.linkedin.com/in/jameshood118/"
               target="_blank"
               class="px-2 py-2"
