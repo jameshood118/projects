@@ -97,20 +97,27 @@ export default new Vuex.Store({
       blog: [
         {
           id: 0,
+          title: 'Reactjs Tinkering',
+          date: '9/04/2020',
+          message:
+            '<p>Tinkered around with some react and styled-components today, learned how to use the themeprovider to enable dynamic switching of themes. Super nice. <a class="has-text-link" href="https://github.com/jameshood118/react-theme-toggle" target="_blank">Github</a> or <a class="has-text-link" href="https://codesandbox.io/s/eloquent-smoke-iqucb" target="_blank">Codesandbox</a>. I also followed the react tictactoe tutorial a few weeks ago, nothing super special but i learned a lot, <a class="has-text-link" href="https://github.com/jameshood118/react_tictactoe" target="_blank">Github</a></p>'
+        },
+        {
+          id: 1,
           title: 'Updates',
           date: '8/16/2020',
           message:
             '<p>Just finished re-adding vuex to this site, wanted to use it as a data store, a single place i could write data to without having to set up a database, or store all of the items in their specific pages. This way i could also use that data should i want to write badge like components, etc. Vuex is very powerful. I have also set up a number of projects on my github (some react, some gatsby etc) as well as setting up my profile readme. Clever boy.</p><p> This isnt some massive project, this is a SPA vueJS portfolio to show the world i can code in vueJS. This site was set up using @vue/cli, definitely a much faster set up than before.</p>'
         },
         {
-          id: 1,
+          id: 2,
           title: 'Updates',
           date: '7/12/2020',
           message:
             'I set up a new repo on github so i can tinker with gatsbyjs. Gotta say, im very impressed, it seems to solve some of the problems i see with VueJS. I am impressed with its builtin graphql capabilities, and i cant wait to see how it would fair hooked up to some real data!'
         },
         {
-          id: 2,
+          id: 3,
           title: 'Updates',
           date: '7/04/2020',
           message:
