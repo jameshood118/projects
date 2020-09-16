@@ -19,6 +19,7 @@ export default new Vuex.Store({
       ],
       games: [
         { item: 'Animal Crossing: New Horizon' },
+        { item: 'Minecraft' },
         { item: 'Dauntless' },
         { item: 'Ticket to Ride (boardgame)' },
         { item: 'Munchkin' },
