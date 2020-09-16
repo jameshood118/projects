@@ -7,9 +7,9 @@
     </section>
     <section class="section">
       <div class="card">
-        <div class="card-content">
-          <p class="title is-6">{{ title }}</p>
-        </div>
+        <header class="card-header">
+          <p class="card-header-title title is-6">{{ title }}</p>
+        </header>
         <div class="card-content">
           <div class="content">
             <p>
@@ -41,12 +41,12 @@
           :key="items.id"
         >
           <div class="card">
-            <div class="card-content">
-              <p class="title is-6">
+            <header class="card-header">
+              <p class="card-header-title title is-6">
                 {{ items.title }} -
                 <time :datetime="items.date">{{ items.date }}</time>
               </p>
-            </div>
+            </header>
             <div class="card-content">
               <div class="content" v-html="items.message"></div>
             </div>

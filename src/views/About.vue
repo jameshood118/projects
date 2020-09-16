@@ -4,9 +4,9 @@
     <div class="columns is-multiline">
       <div class="column is-12">
         <div class="card">
-          <div class="card-content">
-            <p class="title is-6">About</p>
-          </div>
+          <header class="card-header">
+            <p class="card-header-title title is-6">About</p>
+          </header>
           <div class="card-content">
             <p>
               My name is James Hood, I am a Front end Web Developer. I work with
@@ -36,9 +36,11 @@
         :key="index"
       >
         <div class="card">
-          <div class="card-content">
-            <p class="title is-6 is-capitalized">{{ index }}</p>
-          </div>
+          <header class="card-header">
+            <p class="card-header-title title is-6 is-capitalized">
+              {{ index }}
+            </p>
+          </header>
           <div class="card-content">
             <ul v-for="list in bio" :key="list.item">
               <li v-if="index != 'writings'">{{ list.item }}</li>
