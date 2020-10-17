@@ -16,6 +16,7 @@ $primary: #34495e !default;
 $yellow-invert: #fff;
 
 //variable overrides
+$body-size: clamp(14px, 2.5vw, 16px);
 $gap: 32px;
 $section-padding: 2rem 1.5rem;
 $radius-small: 3px;
