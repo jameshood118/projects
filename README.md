@@ -1,75 +1,9 @@
-# Nuxt Minimal Starter
+# Projects
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+One might ask themselvs why this exists, it could serve as a back up, it could serve as an idea dump
 
-## Setup
+## Backstory
 
-Make sure to install dependencies:
+Every couple of years since Art Institute of Pittsburgh i've been remaking my portfolio, or re-launching I suppose. This is the longest it has gone without an update, as I was working for a private company that worked in government/emergency planning field. This means that most, if not all of my work was targetted towards that end and I didnt get much time to work on other things. Well, this portfolio is over 4 years old, and most of the packages i used for it are deprecated by now. So I plan on re-launching soon with new tech, in the same place, it'll replace/upgrade the old version.
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Keep an eye out for changes
