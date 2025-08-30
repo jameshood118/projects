@@ -2,10 +2,12 @@ let data = {
     about: {
       description: [
         {
+          id: 0,
           item: '<p>My name is James Hood, I am a Front end Web Developer. I work with a wide array of tools. My languages include: VueJS, Javascript (ECMAScript 5/6), Jquery, HTML(5), CSS(3). I have worked as a graphic designer and as a web developer, and in my own personal freelance work I have often been both at the same time. In 2015 I acquired new skills in my briefcase, these include: Shipping and Logistics, Ecommerce data entry, Amazon Vendor Central compliance, EDI data exchange as well as Quickbooks online. I have become more than just a Web Developer, and much more than just a face in the crowd.</p>',
         }
         ,
         {
+          id: 1,
           item:'<p>These days its refreshing to find someone who can do multiple things, who can learn multiple skills, and run with that. The days of 1 skill per 1 employee are over. That just doesnt work these days.</p>'
         }
       ],
@@ -100,9 +102,12 @@ let data = {
     home: {
       description: [
         {
+          id: 0,
           item: '<p>This site will serve as a thing. to show off some stuff here and there. Why am I doing this? because lets be honest, i started setting this site up at 4:15 pm , saturday july 4th 2020. by 4:58 pm after watching the Back to the Future Trilogy i had a skeleton up and running. very minimal yes, but i am a front end developer. I work best with a UX/UI developer. I make their awesome designs work, they make me look good, i make them look good.</p>'
         },
-        {item: '<p>I am an outside the box kind of thinker. I am not set in my ways, nor have I had &apos;the rules of the internet&apos; engraved in my head. If something doesn&apos;t work, I find another solution, learn it, and apply it. My methods have always been &apos;work on it until it works without issues&apos;. I love getting down deep into code and figuring out the logic.</p>'}
+        {
+          id: 1,
+          item: '<p>I am an outside the box kind of thinker. I am not set in my ways, nor have I had &apos;the rules of the internet&apos; engraved in my head. If something doesn&apos;t work, I find another solution, learn it, and apply it. My methods have always been &apos;work on it until it works without issues&apos;. I love getting down deep into code and figuring out the logic.</p>'}
       ],
       blog: [
         {
