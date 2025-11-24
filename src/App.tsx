@@ -1,6 +1,6 @@
 // src/App.tsx
 
-import { Box, Card, CardHeader, CardContent, Container, Grid, Typography } from '@mui/material';
+import { Box, Card, CardHeader, CardContent, Container, Grid, Link, List, ListItem, ListItemText, Typography } from '@mui/material';
 
 const App = () => {
 let title = 'Welcome to my Portfolio';
@@ -57,47 +57,47 @@ const siteData = {
       writings: [
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYa1loamZHc29XQ1E/edit?usp=sharing" target="_blank">Poems/Songs</a>'
+            "https://drive.google.com/file/d/0B2lCjTRAVBHYa1loamZHc29XQ1E/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYd2JKb2VBWkNYLWc/edit?usp=sharing" target="_blank">Heroes Unlimited: Invasion Denied</a>'
+            "https://drive.google.com/file/d/0B2lCjTRAVBHYd2JKb2VBWkNYLWc/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYa1RmM2VwZ0V5UDQ/edit?usp=sharing" target="_blank">Adventure</a>'
+            "https://drive.google.com/file/d/0B2lCjTRAVBHYa1RmM2VwZ0V5UDQ/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYcG51MXUwdFFUM3M/edit?usp=sharing" target="_blank">Vigiliance</a>'
+            "https://drive.google.com/file/d/0B2lCjTRAVBHYcG51MXUwdFFUM3M/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYSjZTaHc1aHdnaVU/edit?usp=sharing" target="_blank">Battle of the Wyrm</a>'
+            "https://drive.google.com/file/d/0B2lCjTRAVBHYSjZTaHc1aHdnaVU/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYRmdlYXdaQ0pIUDA/edit?usp=sharing" target="_blank">Battle of the Wyrm History</a>'
+           "https://drive.google.com/file/d/0B2lCjTRAVBHYRmdlYXdaQ0pIUDA/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYcENmT3lueTNLdVk/edit?usp=sharing" target="_blank">Heroes Unlimited: 2nd Game</a>'
+           "https://drive.google.com/file/d/0B2lCjTRAVBHYcENmT3lueTNLdVk/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYeGRuV3FnZ01mN2c/edit?usp=sharing" target="_blank">Mage The Acension Chronicle</a>'
+            "https://drive.google.com/file/d/0B2lCjTRAVBHYeGRuV3FnZ01mN2c/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYUFVobUNBRTVJaEE/edit?usp=sharing" target="_blank">Feng Shui Game</a>'
+            "https://drive.google.com/file/d/0B2lCjTRAVBHYUFVobUNBRTVJaEE/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYZzUtb0FWaGtyMXM/edit?usp=sharing" target="_blank">Waterlogged</a>'
+            "https://drive.google.com/file/d/0B2lCjTRAVBHYZzUtb0FWaGtyMXM/edit?usp=sharing"
         },
         {
           item:
-            '<a href="https://drive.google.com/file/d/0B2lCjTRAVBHYZzUtb0FWaGtyMXM/edit?usp=sharing" target="_blank">Nuked</a>'
+            "https://drive.google.com/file/d/0B2lCjTRAVBHYZzUtb0FWaGtyMXM/edit?usp=sharing"
         }
       ]
     },
@@ -192,33 +192,6 @@ const siteData = {
             </Container>
           </Box>
           <Box component="section" sx={{ mb: 4 }}>
-    <Card>
-      <CardHeader 
-        title="About" 
-        titleTypographyProps={{ variant: 'h6' }}
-        sx={{ backgroundColor: 'grey.100' }} // Optional: Mimics the light grey header of Bulma cards
-      />
-            <CardContent>
-              <Typography variant="body1" paragraph>
-                My name is James Hood, I am a Front end Web Developer. I work with
-                a wide array of tools. My languages include: VueJS, Javascript
-                (ECMAScript 5/6), Jquery, HTML(5), CSS(3). I have worked as a
-                graphic designer and as a web developer, and in my own personal
-                freelance work I have often been both at the same time. In 2015 I
-                acquired new skills in my briefcase, these include: Shipping and
-                Logistics, Ecommerce data entry, Amazon Vendor Central compliance,
-                EDI data exchange as well as Quickbooks online. I have become more
-                than just a Web Developer, and much more than just a face in the
-                crowd.
-              </Typography>
-              <Typography variant="body1" paragraph>
-                These days its refreshing to find someone who can do multiple
-                things, who can learn multiple skills, and run with that. The days
-                of 1 skill per 1 employee are over. That just doesnt work these
-                days.
-              </Typography>
-            </CardContent>
-          </Card>
             <Box component="section" sx={{padding: "2rem 1.5rem"}}>
               <Card>
                 <CardHeader 
@@ -246,6 +219,34 @@ const siteData = {
                 </CardContent>
               </Card>
             </Box>
+            <Box component="section" sx={{padding: "2rem 1.5rem"}} />
+              <Card>
+                <CardHeader 
+                  title="About" 
+                  titleTypographyProps={{ variant: 'h6' }}
+                  sx={{ backgroundColor: 'grey.100' }} // Optional: Mimics the light grey header of Bulma cards
+                />
+                <CardContent>
+                  <Typography variant="body1" paragraph>
+                    My name is James Hood, I am a Front end Web Developer. I work with
+                    a wide array of tools. My languages include: VueJS, Javascript
+                    (ECMAScript 5/6), Jquery, HTML(5), CSS(3). I have worked as a
+                    graphic designer and as a web developer, and in my own personal
+                    freelance work I have often been both at the same time. In 2015 I
+                    acquired new skills in my briefcase, these include: Shipping and
+                    Logistics, Ecommerce data entry, Amazon Vendor Central compliance,
+                    EDI data exchange as well as Quickbooks online. I have become more
+                    than just a Web Developer, and much more than just a face in the
+                    crowd.
+                  </Typography>
+                  <Typography variant="body1" paragraph>
+                    These days its refreshing to find someone who can do multiple
+                    things, who can learn multiple skills, and run with that. The days
+                    of 1 skill per 1 employee are over. That just doesnt work these
+                    days.
+                  </Typography>
+                </CardContent>
+                </Card>
             </Box>
 
     {/* Blog/Items Grid Section */}
@@ -284,12 +285,11 @@ const siteData = {
         <Box component="section"  sx={{padding: "2rem 1.5rem"}}>
         <Grid container spacing={3}>
           {Object.entries(aboutData).map(([bio, items]) => (
-            <Grid key={bio}>
+            <Grid key={bio} size={4}>
               <Card>
                 <CardHeader
                   title={
                     <Box component="span">
-                      {bio} - 
                       <Typography sx={{ textTransform: 'capitalize', fontSize: '1.5rem', fontWeight: 'bold' }}>
                         {bio}
                       </Typography>
@@ -299,20 +299,20 @@ const siteData = {
                   sx={{ backgroundColor: 'grey.50' }}
                 />
                 <CardContent>
-                <ul aria-label={bio}>
+                <List aria-label={bio}>
                   {items.map((entry, index) => (
-                    <li key={index}>
+                    <ListItem key={index} disableGutters sx={{p:0.5}}>
                       {/* Check if the string contains HTML (like the <a> tags in 'writings').
                         If yes, use dangerouslySetInnerHTML. If no, render normally.
                       */}
-                      {entry.item.includes('<a') ? (
-                        <span dangerouslySetInnerHTML={{ __html: entry.item }} />
+                      {entry.item.includes('http') ? (
+                        <Link href={entry.item}>writings</Link>
                       ) : (
-                        entry.item
+                        <ListItemText>{entry.item}</ListItemText>
                       )}
-                    </li>
+                    </ListItem>
                   ))}
-                </ul>
+                </List>
                 </CardContent>
               </Card>
             </Grid>
