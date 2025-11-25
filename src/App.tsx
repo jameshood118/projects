@@ -147,12 +147,11 @@ const AboutList = ()=> {
                 <CardHeader
                   title={
                     <Box component="span">
-                      <Typography sx={{ textTransform: 'capitalize', fontSize: '1.5rem', fontWeight: 'bold' }}>
+                      <Typography sx={{ textTransform: 'capitalize', fontSize: '1rem', fontWeight: 'bold' }}>
                         {bio}
                       </Typography>
                     </Box>
                   }
-                  titleTypographyProps={{ variant: 'h6' }}
                   sx={{ backgroundColor: 'grey.50' }}
                 />
                 <CardContent>
@@ -256,7 +255,7 @@ const App = () => {
                 }}
               >
                 <img 
-                  src="/assets/gallerybanner.png" 
+                  src="./assets/gallerybanner.png" 
                   alt="Gallery Banner" 
                   style={{ 
                     maxWidth: '100%', 
