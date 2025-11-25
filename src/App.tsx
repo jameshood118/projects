@@ -2,7 +2,6 @@
 
 import { Box, Card, CardHeader, CardContent, Container, Grid, Link, List, ListItem, ListItemText, Typography } from '@mui/material';
 
-const App = () => {
 let title = 'Welcome to my Portfolio';
 // 1. Define the shape of a single item
 interface ItemData {
@@ -135,154 +134,12 @@ const siteData = {
     }
   };
 
-    const aboutData: AboutSection = siteData.about as AboutSection;
+const aboutData: AboutSection = siteData.about as AboutSection;
+
+const AboutList = ()=> {
 
   return (
-        <Box
-          sx={{
-            // Padding Control
-            pt: 0, // No padding on the top
-            pb: 0, // No padding on the bottom
-            pl: { xs: 2, sm: 4, md: 8, lg: 12 }, // **Left Padding:** Adjusts responsively
-            pr: { xs: 2, sm: 4, md: 8, lg: 12 }, // **Right Padding:** Matches the left padding
-            
-            // Color Control (Ensuring Accessibility)
-            bgcolor: 'secondary.main', // Light Cyan background for the content box
-            color: 'secondary.contrastText', // Black text for maximum contrast
-
-            // Optional: Basic styling for visibility
-            minHeight: '300px',
-            py: 4, // Add some vertical padding INSIDE the Box to space out the content
-            textAlign: 'center',
-            boxShadow: 3, // Add a slight shadow
-          }}
-        >
-          {/* Content inside the central div */}
-              <Box
-                component="section"
-                sx={{
-                  // Replicates 'hero' class flex behavior
-                  display: { xs: 'none', md: 'flex' }, // Hidden on touch devices (xs, sm), visible on desktop (md+)
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  maxWidth: '100%',
-                  minHeight: 'auto', // Adjust height as needed to match Bulma's hero size
-                  py: 6, // Padding Y-axis (replicates hero-body spacing)
-                }}
-              >
-            <Container maxWidth="lg" sx={{ textAlign: 'center' }}>
-              {/* Replicates 'hero-body' content */}
-              <Box 
-                component="div" 
-                sx={{ 
-                  display: 'flex', 
-                  justifyContent: 'center' 
-                }}
-              >
-                <img 
-                  src="/assets/gallerybanner.png" 
-                  alt="Gallery Banner" 
-                  style={{ 
-                    maxWidth: '100%', 
-                    height: 'auto',
-                    display: 'block' 
-                  }} 
-                />
-              </Box>
-            </Container>
-          </Box>
-          <Box component="section" sx={{ mb: 4 }}>
-            <Box component="section" sx={{padding: "2rem 1.5rem"}}>
-              <Card>
-                <CardHeader 
-                  title={title} 
-                  sx={{ backgroundColor: 'grey.100' }} // Optional header styling
-                />
-                <CardContent>
-                  <Typography variant="body1" paragraph>
-                    This site will serve as a thing. to show off some stuff here and
-                    there. Why am I doing this? because lets be honest, i started
-                    setting this site up at 4:15 pm , saturday july 4th 2020. by 4:58
-                    pm after watching the Back to the Future Trilogy i had a skeleton
-                    up and running. very minimal yes, but i am a front end developer.
-                    I work best with a UX/UI developer. I make their awesome designs
-                    work, they make me look good, i make them look good.
-                  </Typography>
-                  <Typography variant="body1">
-                    I am an outside the box kind of thinker. I am not set in my ways,
-                    nor have I had 'the rules of the internet' engraved in my head. If
-                    something doesn't work, I find another solution, learn it, and
-                    apply it. My methods have always been 'work on it until it works
-                    without issues'. I love getting down deep into code and figuring
-                    out the logic.
-                  </Typography>
-                </CardContent>
-              </Card>
-            </Box>
-            <Box component="section" sx={{padding: "2rem 1.5rem"}} />
-              <Card>
-                <CardHeader 
-                  title="About" 
-                  titleTypographyProps={{ variant: 'h6' }}
-                  sx={{ backgroundColor: 'grey.100' }} // Optional: Mimics the light grey header of Bulma cards
-                />
-                <CardContent>
-                  <Typography variant="body1" paragraph>
-                    My name is James Hood, I am a Front end Web Developer. I work with
-                    a wide array of tools. My languages include: VueJS, Javascript
-                    (ECMAScript 5/6), Jquery, HTML(5), CSS(3). I have worked as a
-                    graphic designer and as a web developer, and in my own personal
-                    freelance work I have often been both at the same time. In 2015 I
-                    acquired new skills in my briefcase, these include: Shipping and
-                    Logistics, Ecommerce data entry, Amazon Vendor Central compliance,
-                    EDI data exchange as well as Quickbooks online. I have become more
-                    than just a Web Developer, and much more than just a face in the
-                    crowd.
-                  </Typography>
-                  <Typography variant="body1" paragraph>
-                    These days its refreshing to find someone who can do multiple
-                    things, who can learn multiple skills, and run with that. The days
-                    of 1 skill per 1 employee are over. That just doesnt work these
-                    days.
-                  </Typography>
-                </CardContent>
-                </Card>
-            </Box>
-
-    {/* Blog/Items Grid Section */}
-      <Box component="section" sx={{padding: "2rem 1.5rem"}}>
-        <Grid container spacing={3}>
-          {siteData.home.blog.map((item) => (
-            <Grid key={item.id}>
-              <Card>
-                <CardHeader
-                  title={
-                    <Box component="span">
-                      {item.title} - 
-                      <Typography component="span" variant="caption" sx={{ ml: 1 }}>
-                        <time dateTime={item.date}>{item.date}</time>
-                      </Typography>
-                    </Box>
-                  }
-                  titleTypographyProps={{ variant: 'h6' }}
-                  sx={{ backgroundColor: 'grey.50' }}
-                />
-                <CardContent>
-                  {/* Using dangerouslySetInnerHTML to mimic v-html behavior */}
-                  <Typography 
-                    component="div" 
-                    dangerouslySetInnerHTML={{ __html: item.message }} 
-                  />
-                </CardContent>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </Box>
-
-        {/* About Me Section */}
-
-        <Box component="section"  sx={{padding: "2rem 1.5rem"}}>
+      <Box component="section"  sx={{padding: "2rem 1.5rem"}}>
         <Grid container spacing={3}>
           {Object.entries(aboutData).map(([bio, items]) => (
             <Grid key={bio} size={4}>
@@ -319,7 +176,162 @@ const siteData = {
           ))}
         </Grid>
       </Box>
-    </Box>
+  );
+}
+
+const BlogItems = ()=> {
+  return (      
+  <Box component="section" sx={{padding: "2rem 1.5rem"}}>
+        <Grid container spacing={3}>
+          {siteData.home.blog.map((item) => (
+            <Grid key={item.id} size={12}>
+              <Card>
+                <CardHeader
+                  title={
+                    <Box component="span">
+                      {item.title} - 
+                      <Typography component="span" variant="caption" sx={{ ml: 1 }}>
+                        <time dateTime={item.date}>{item.date}</time>
+                      </Typography>
+                    </Box>
+                  }
+                  sx={{ backgroundColor: 'grey.50' }}
+                />
+                <CardContent>
+                  {/* Using dangerouslySetInnerHTML to mimic v-html behavior */}
+                  <Typography 
+                    component="div" 
+                    dangerouslySetInnerHTML={{ __html: item.message }} 
+                  />
+                </CardContent>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+  </Box>);
+}
+
+const App = () => {
+
+  return (
+        <Box
+          sx={{
+            // Padding Control
+            pt: 0, // No padding on the top
+            pb: 0, // No padding on the bottom
+            pl: { xs: 1, sm: 1, md: 2, lg: 2 }, // **Left Padding:** Adjusts responsively
+            pr: { xs: 1, sm: 1, md: 2, lg: 2 }, // **Right Padding:** Matches the left padding
+            
+            // Color Control (Ensuring Accessibility)
+            bgcolor: 'secondary.main', // Light Cyan background for the content box
+            color: 'secondary.contrastText', // Black text for maximum contrast
+
+            // Optional: Basic styling for visibility
+            minHeight: '300px',
+            py: 4, // Add some vertical padding INSIDE the Box to space out the content
+            textAlign: 'center',
+            boxShadow: 3, // Add a slight shadow
+          }}
+        >
+          {/* Content inside the central div */}
+          <Box
+                component="section"
+                sx={{
+                  // Replicates 'hero' class flex behavior
+                  display: { xs: 'none', md: 'flex' }, // Hidden on touch devices (xs, sm), visible on desktop (md+)
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  maxWidth: '100%',
+                  minHeight: 'auto', // Adjust height as needed to match Bulma's hero size
+                  py: 6, // Padding Y-axis (replicates hero-body spacing)
+                }}
+              >
+            <Container maxWidth="lg" sx={{ textAlign: 'center' }}>
+              {/* Replicates 'hero-body' content */}
+              <Box 
+                component="div" 
+                sx={{ 
+                  display: 'flex', 
+                  justifyContent: 'center' 
+                }}
+              >
+                <img 
+                  src="/assets/gallerybanner.png" 
+                  alt="Gallery Banner" 
+                  style={{ 
+                    maxWidth: '100%', 
+                    height: 'auto',
+                    display: 'block' 
+                  }} 
+                />
+              </Box>
+            </Container>
+          </Box>
+            <Box component="section" sx={{ mb: 4 }}>
+            <Box component="section" sx={{padding: "2rem 1.5rem"}}>
+              <Card>
+                <CardHeader 
+                  title={title} 
+                  sx={{ backgroundColor: 'grey.100' }} // Optional header styling
+                />
+                <CardContent>
+                  <Typography variant="body1">
+                    This site will serve as a thing. to show off some stuff here and
+                    there. Why am I doing this? because lets be honest, i started
+                    setting this site up at 4:15 pm , saturday july 4th 2020. by 4:58
+                    pm after watching the Back to the Future Trilogy i had a skeleton
+                    up and running. very minimal yes, but i am a front end developer.
+                    I work best with a UX/UI developer. I make their awesome designs
+                    work, they make me look good, i make them look good.
+                  </Typography>
+                  <Typography variant="body1">
+                    I am an outside the box kind of thinker. I am not set in my ways,
+                    nor have I had 'the rules of the internet' engraved in my head. If
+                    something doesn't work, I find another solution, learn it, and
+                    apply it. My methods have always been 'work on it until it works
+                    without issues'. I love getting down deep into code and figuring
+                    out the logic.
+                  </Typography>
+                </CardContent>
+              </Card>
+            </Box>
+            <Box component="section" sx={{padding: "2rem 1.5rem"}} />
+              <Card>
+                  <CardHeader 
+                    title="About" 
+                    titleTypographyProps={{ variant: 'h6' }}
+                    sx={{ backgroundColor: 'grey.100' }} // Optional: Mimics the light grey header of Bulma cards
+                  />
+                  <CardContent>
+                    <Typography variant="body1">
+                      My name is James Hood, I am a Front end Web Developer. I work with
+                      a wide array of tools. My languages include: VueJS, Javascript
+                      (ECMAScript 5/6), Jquery, HTML(5), CSS(3). I have worked as a
+                      graphic designer and as a web developer, and in my own personal
+                      freelance work I have often been both at the same time. In 2015 I
+                      acquired new skills in my briefcase, these include: Shipping and
+                      Logistics, Ecommerce data entry, Amazon Vendor Central compliance,
+                      EDI data exchange as well as Quickbooks online. I have become more
+                      than just a Web Developer, and much more than just a face in the
+                      crowd.
+                    </Typography>
+                    <Typography variant="body1" paragraph>
+                      These days its refreshing to find someone who can do multiple
+                      things, who can learn multiple skills, and run with that. The days
+                      of 1 skill per 1 employee are over. That just doesnt work these
+                      days.
+                    </Typography>
+                  </CardContent>
+              </Card>
+            </Box>
+
+    {/* Blog/Items Grid Section */}
+      <BlogItems/>
+
+        {/* About Me Section */}
+
+      <AboutList />
+        </Box>
   );
 };
 
